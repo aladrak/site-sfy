@@ -1,0 +1,186 @@
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* subtle background color on hover */
+}
+
+.line {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    display: block;
+    /* height: 100%; */
+    height: 2px;
+    background-color: #ddd;
+}
+
+#card-container {
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px; /* Зазор между элементами */
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Карточки в столбик */
+        gap: 15px; /* Увеличиваем зазор */
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--clr21);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: grid;
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        max-width: 100%; /* Занимает всю ширину экрана */
+        padding: 15px; /* Уменьшаем отступы */
+    }
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--clr22);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        font-size: 1.3em; /* Уменьшаем размер заголовка */
+    }
+}
+
+.card p {
+    margin: 0;
+    font-size: 1em;
+
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        font-size: 0.9em; /* Уменьшаем размер текста */
+    }
+}
+
+.card img {
+    width: 100px;
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        height: 100px; /* Сохраняем пропорции */
+    }
+}
+
+/* Слайдер с историями */
+#story-container {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+}
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--clr21);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.slide h2 {
+    margin-top: 0;
+}
+
+.slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slider-btn.prev {
+    left: 10px;
+    z-index: 1;
+}
+
+.slider-btn.next {
+    right: 10px;
+    z-index: 1;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Адаптация слайдера */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%; /* Уменьшаем ширину слайдера */
+        padding: 10px;
+    }
+
+    .slide {
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    .slide img {
+        width: 100px; /* Уменьшаем изображения */
+        height: 100px;
+    }
+
+    .dots {
+        margin-top: 5px; /* Уменьшаем отступ точек */
+    }
+
+    .dot {
+        width: 8px; /* Уменьшаем размер точек */
+        height: 8px;
+    }
+}

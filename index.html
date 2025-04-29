@@ -5,66 +5,61 @@
     <title>sfy</title>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=".">
+    <meta name="description" content="Лучшие предложения рядом с вами: найдите местные акции и компании">
     <meta name="keywords" content=".">
     <link rel="icon" type="image/svg" href="src/img/logo.svg">
     <link rel="stylesheet" type="text/css" href="src/css/index.css">
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
     <script src="src/js/main.js" defer></script>
     <script src="src/js/index.js" defer></script>
-    <script src="src/js/story.js" defer></script>
 </head>
 <body>
 <div id="content">
     <header class="unselect"></header>
     <div class="container">
-        <div class="" id="" data-display-changed="true" data-content-cover-height="90vh" style="height: 398.7px; background-attachment: scroll; background-image: url(&quot;https://optim.tildacdn.pub/tild3233-3237-4332-b539-353637343034/-/format/webp/top-rated-text-is-wr.jpg.webp&quot;);" itemscope="" itemtype="http://schema.org/ImageObject" data-content-cover-updated-height="398.7px"><meta itemprop="image" content="https://static.tildacdn.info/tild3233-3237-4332-b539-353637343034/top-rated-text-is-wr.jpg"></div>
-        <div></div>
-        <div id="card-container" class="justyfy-center"></div>
-        <div id="story-container">
-            <div class="slider-container">
-                <h3>Отзывы</h3>
-                <div class="line"></div>
-                <button class="slider-btn prev unselect" type="button">&#10094;</button>
-                <div class="slider">
-                    <div class="slide">
-                        <img src="src/img/story1.jpg" alt="Irina">
-                        <h2>Ирина</h2>
-                        <p>1</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story2.jpg" alt="Anna">
-                        <h2>Анна</h2>
-                        <p>2</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story3.jpg" alt="Sergey">
-                        <h2>Сергей</h2>
-                        <p>3</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story4.jpg" alt="Olga">
-                        <h2>Ольга</h2>
-                        <p>4</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story5.jpg" alt="Vadim">
-                        <h2>Вадим</h2>
-                        <p>5</p>
-                    </div>
+        <div class="title items-center">
+            <p style="font-size: 52px; font-weight: 700; line-height: 1.23;">Ваш гид по местным бизнесам и их акциям</p>
+            <p style="font-size: 22px;">Изучайте заведения, находите выгодные предложения и читайте объективные отзывы. Всё в одном месте!</p>
+            <button type="button" onclick="document.location='search.html'"><p style="font-size: 25px; font-weight: bold;">Начать поиск</p></button>
+        </div>
+        <div>
+            <h1>Ваш гид по лучшим заведениям и акциям</h1>
+            <p>Постарайтесь найти идеальное место, где будут представлены актуальные акции, высокие оценки и детальные, подробные описания всех услуг и товаров.</p>
+            <div id="card-container" class="justyfy-center"></div>
+        </div>
+        <div>
+            <h1>Преимущества нашего агрегатора заведений</h1>
+            <p>Находите лучшие предложения и открывайте новые места с нашим удобным сервисом.</p>
+            <div id="card-container"></div>
+        </div>
+        <div>
+            <h1>Найдите заведение с идеальной акцией для вас</h1>
+            <p>Наш агрегатор помогает быстро находить рестораны, кафе и магазины с актуальными промоакциями и скидками.</p>
+            <div id="card-container"></div>
+        </div>
+        <div>
+            <h1>Как работает агрегатор</h1>
+            <p>Поиск, детальная фильтрация и упрощенный доступ к актуальной информации о заведениях, их услугах и специальных промоакциях, предлагаемых для клиентов</p>
+            <div id="card-container"></div>
+        </div>
+        <div class="input-box">
+            <h1>Находите выгодные предложения рядом с вами</h1>
+            <p>Зарегистрируйтесь, чтобы получать уведомления о скидках и акциях в вашем районе</p>
+    
+            <form id="registrationForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Как вас зовут?" required>
+                    <input type="email" id="email" placeholder="Ваш email?" required>
                 </div>
-                <button class="slider-btn next unselect" type="button">&#10095;</button>
-            </div>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
+                <textarea id="message" placeholder="Что вы хотите сказать?" rows="4"></textarea>
+                <button type="submit" class="btn">Зарегистрироваться сейчас</button>
+            </form>
+        </div>
+        <div id="card-container" class="justyfy-center">
         </div>
     </div>
-    <footer></footer>
+</div>
+<footer></footer>
 </div>
 </body>
 </html>

@@ -14,9 +14,10 @@
         // Кнопки
         const navButtons = [
             { text: 'Главная', href: 'index.html' },
-            { text: 'Рестораны и кафе', href: 'index.html' },
-            { text: 'Продуктовые магазины', href: 'index.html' },
-            { text: 'Магазины для хобби', href: 'index.html' },
+            // { text: 'Рестораны и кафе', href: 'index.html' },
+            // { text: 'Продуктовые магазины', href: 'index.html' },
+            { text: 'Найти магазины', href: 'search.html' },
+            // { text: 'Магазины для хобби', href: 'index.html' },
             { text: 'Контакты', href: 'index.html' }
         ];
         const btnContainer = document.createElement('div');
@@ -31,14 +32,14 @@
             btnContainer.appendChild(navButton);
         });
 
-        const themeBtn = document.createElement('button');
-        themeBtn.id = 'theme-toggle';
+        // const themeBtn = document.createElement('button');
+        // themeBtn.id = 'theme-toggle';
 
         burgerMenu.onclick = () => btnContainer.classList.toggle('active');
-        navContainer.appendChild(burgerMenu);
+        navContainer.appendChild(burgerMenu); // Для телефона
         // navContainer.appendChild(sep);
         navContainer.appendChild(btnContainer);
-        navContainer.appendChild(themeBtn);
+        // navContainer.appendChild(themeBtn);
         header.appendChild(navContainer);
     }
 })();

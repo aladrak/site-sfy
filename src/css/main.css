@@ -5,7 +5,7 @@
     --clr12: #e6e6e6;
     --clr21: #4d4d4d;
     --clr22: #d9d9d9;
-    --clrt: #6aeeff;
+    --clrt: #66C280;
 }
 
 * {
@@ -27,8 +27,8 @@
 
 
 body {
-    background-color: var(--clr11);
-    color: var(--clr12);
+    background-color: var(--clr02);
+    color: var(--clr01);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
@@ -49,8 +49,8 @@ body.dark-mode {
 }
 
 header {
-    background-color: var(--clr01);
-    color: var(--clr02);
+    background-color: var(--clrt);
+    color: var(--clr01);
     position: fixed;
     height: 4rem;
     width: 100%;
@@ -145,7 +145,7 @@ header .nav-button:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--clr02);
+    color: var(--clr01);
 }
 
 #content {
@@ -162,7 +162,6 @@ h1, h2, h3 {
 }
 
 p {
-    margin: 0 0 15px;
     line-height: 1.6;
 
     /* Адаптивность для мобильных устройств */
@@ -171,10 +170,10 @@ p {
     }
 }
 
-a {
+/* a {
     color: #3498db;
     text-decoration: none;
-}
+} */
 
 @media (max-width: 768px) {
     .burger-menu {

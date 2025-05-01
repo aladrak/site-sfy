@@ -3,6 +3,7 @@
 }
 
 .title {
+    padding-top: 135px;
     display: inline-grid;
     max-width: 560px;
     gap: 20px;

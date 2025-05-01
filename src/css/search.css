@@ -2,22 +2,49 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.1); /* subtle background color on hover */
 }
 
-.line {
+/* .line {
     margin-top: 2vh;
     margin-bottom: 2vh;
     width: 100%;
     display: block;
-    /* height: 100%; */
+    height: 100%;
     height: 2px;
     background-color: #ddd;
+} */
+
+/* .list {
+    display: grid;
+    gap: 90px;
+    padding-top: 135px;
+    padding-bottom: 135px;
+} */
+
+.title {
+    padding: 40px;
+    color: white;
+    display: grid;
+    border-radius: 40px;
+    margin:40px;
+    opacity: 1;
+    transition: opacity .7s;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 #card-container {
+    margin: 0px 250px 0px 250px;
     text-align: start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px; /* Зазор между элементами */
+    padding-top: 65px;
+    padding-bottom: 135px;
 
     /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
@@ -28,13 +55,12 @@ button:hover {
 
 .card {
     width: 100%;
-    max-width: 400px;
-    background-color: var(--clr21);
-    border: 1px solid #ddd;
+    max-width: 500px;
+    background-color: #e3ede3;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     box-sizing: border-box;
     display: grid;
 
@@ -44,10 +70,12 @@ button:hover {
         padding: 15px; /* Уменьшаем отступы */
     }
 }
+.card-content {
+    padding: 20px;
+}
 
 .card h3 {
     margin-top: 0;
-    color: var(--clr22);
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -69,28 +97,34 @@ button:hover {
 }
 
 .card img {
-    width: 100px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 300px;
+    object-fit: cover;
     /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
-        height: 100px; /* Сохраняем пропорции */
+        /* height: 100px; Сохраняем пропорции */
     }
 }
 
 /* Слайдер с историями */
 #story-container {
-    display: inline-grid;
+    background-color: var(--clrt);
+    display: grid;
     justify-items: center;
     align-items: center;
+    padding-top: 135px;
+    padding-bottom: 135px;
 }
 .slider-container {
     position: relative;
-    width: 80%;
-    max-width: 800px;
+    width: 95%;
+    /* max-width: 800px; */
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: var(--clr21);
+    /* border: 1px solid #ccc; */
+    /* background-color: var(--clr21); */
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     justify-content: center;
     align-items: center;
 }
@@ -101,6 +135,9 @@ button:hover {
 }
 
 .slide {
+    display:grid;
+    justify-items: center;
+    gap: 30px;
     min-width: 100%;
     box-sizing: border-box;
     padding: 20px;
@@ -108,6 +145,13 @@ button:hover {
 
 .slide h2 {
     margin-top: 0;
+}
+
+.slide h4 {
+    line-height: 1.25;
+    max-width: 800px;
+    font-size: 26px;
+    font-weight: lighter;
 }
 
 .slide img {
@@ -123,6 +167,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
+    border-radius: 30px;
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
@@ -146,17 +191,17 @@ button:hover {
 
 .dot {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 7px;
+    height: 7px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color: #717171;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .dot.active {
-    background-color: #717171;
+    background-color: black;
 }
 
 /* Адаптация слайдера */

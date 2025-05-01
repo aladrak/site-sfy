@@ -11,46 +11,79 @@
     <link rel="stylesheet" type="text/css" href="src/css/search.css">
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
     <script src="src/js/main.js" defer></script>
-    <script src="src/js/cards.js" defer></script>
+    <!-- <script src="src/js/cards.js" defer></script> -->
     <script src="src/js/story.js" defer></script>
 </head>
 <body>
 <div id="content">
     <header class="unselect"></header>
     <div class="container">
-        <div class="" id="" data-display-changed="true" data-content-cover-height="90vh" style="height: 398.7px; background-attachment: scroll; background-image: url(&quot;https://optim.tildacdn.pub/tild3233-3237-4332-b539-353637343034/-/format/webp/top-rated-text-is-wr.jpg.webp&quot;);" itemscope="" itemtype="http://schema.org/ImageObject" data-content-cover-updated-height="398.7px"><meta itemprop="image" content="https://static.tildacdn.info/tild3233-3237-4332-b539-353637343034/top-rated-text-is-wr.jpg"></div>
-        <div></div>
-        <div id="card-container" class="justyfy-center"></div>
+        <div class="title" style="background-image: -webkit-linear-gradient(top, rgba(51, 36, 0, 0.6), rgba(0, 0, 0, 0.6)), url('src/img/search-title.webp');">
+            <div style="max-width: 900px; gap: 40px; display: grid;">
+            <h1 style="font-size: 54px; color:white;">Поиск местных предложений</h1>
+            <p style="font-size: 28px; font-weight: lighter; line-height: 1.4;">Найдите свое новое любимое место! Просмотрите наш список местных предприятий, предлагающих эксклюзивные скидки и акции. Экономьте деньги, открывая для себя новые места рядом с вами.</p>
+            </div>
+        </div>
+        <h1 style="padding-top: 135px;">Акции, скидки и мероприятия сегодня:</h1>
+        <div id="card-container" class="justyfy-center">
+            <div class="card items-center">
+                <img src="src/img/shop1.webp" draggable="false">
+                <div class="card-content">
+                    <h3>Солнечный день</h3>
+                    <p>Счастливый час: В последний час работы кафе получите скидку на всю продукцию -50%</p>
+                </div>
+            </div>
+            <div class="card items-center">
+                <img src="src/img/shop2.webp" draggable="false">
+                <div class="card-content">
+                    <h3>Вилка Ложка</h3>
+                    <p>Бизнес-ланч всего за 229 рублей каждый день с 12:00 до 16:00.</p>
+                </div>
+            </div>
+            <div class="card items-center">
+                <div><img src="src/img/shop3.webp" draggable="false"></div>
+                <div class="card-content">
+                    <h3>Jungle chef</h3>
+                    <p>Специальное предложение: получите скидку 15% при наличии студенческого билета.</p>
+                </div>
+            </div>
+            <div class="card items-center">
+                <div><img src="src/img/shop4.webp" draggable="false"></div>
+                <div class="card-content">
+                    <h3>Скидка на товары для хобби</h3>
+                    <p>Получите скидку 20% на товары для рукоделия и творчества. Средний рейтинг магазина — 4.6.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="list"> -->
         <div id="story-container">
+            <h3 style="font-size: 42px;padding-bottom: 40px;">Отзывы</h3>
             <div class="slider-container">
-                <h3>Отзывы</h3>
-                <div class="line"></div>
                 <button class="slider-btn prev unselect" type="button">&#10094;</button>
                 <div class="slider">
                     <div class="slide">
-                        <img src="src/img/story1.jpg" alt="Irina">
-                        <h2>Ирина</h2>
-                        <p>1</p>
+                        <img src="src/img/story1.webp" alt="Ольга Смирнова">
+                        <h4>Очень удобно искать акции и скидки в ближайших магазинах. Экономия времени и денег!</h4>
+                        <div>
+                            <h2>Ольга Смирнова</h2>
+                            <p>Домохозяйка, мама двоих детей</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="src/img/story2.jpg" alt="Anna">
-                        <h2>Анна</h2>
-                        <p>2</p>
+                        <img src="src/img/story2.webp" alt="Александр Петров">
+                        <h4>Нашёл отличное кафе с приятной атмосферой и вкусной кухней благодаря вашим акциям. Обязательно вернусь!</h4>
+                        <div>
+                            <h2>Александр Петров</h2>
+                            <p>IT-специалист, любит пробовать новые блюда</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="src/img/story3.jpg" alt="Sergey">
-                        <h2>Сергей</h2>
-                        <p>3</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story4.jpg" alt="Olga">
-                        <h2>Ольга</h2>
-                        <p>4</p>
-                    </div>
-                    <div class="slide">
-                        <img src="src/img/story5.jpg" alt="Vadim">
-                        <h2>Вадим</h2>
-                        <p>5</p>
+                        <img src="src/img/story3.webp" alt="Екатерина Иванова">
+                        <h4>Удобное приложение для поиска скидок в магазинах для хобби. Нашла все необходимые материалы для творчества!</h4>
+                        <div>
+                            <h2>Екатерина Иванова</h2>
+                            <p>Дизайнер, увлекается рукоделием</p>
+                        </div>
                     </div>
                 </div>
                 <button class="slider-btn next unselect" type="button">&#10095;</button>
@@ -59,10 +92,9 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </div>
+        <!-- </div> -->
     </div>
     <footer></footer>
 </div>

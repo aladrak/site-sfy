@@ -21,14 +21,18 @@
 }
 
 .list {
+    display: grid;
+    justify-items: center;
+    gap: 90px;
     padding-top: 135px;
     padding-bottom: 135px;
 }
 
-.list .elem {
+.elem {
     display: inline-grid;
     justify-items: center;
     max-width: 1160px;
+    gap: 20px;
 }
 
 .list p {
@@ -65,7 +69,7 @@ input, textarea {
 }
 
 textarea {
-    resize: vertical;
+    resize: none;
     min-height: 100px;
 }
 
@@ -73,7 +77,6 @@ textarea {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
-    color: #fff;
     background-color: var(--clrt);
     border: none;
     border-radius: 20px;
@@ -87,10 +90,96 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 h1 {
     font-size: 42px;
+}
+
+.features {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature img {
+    width: 65px;
+    height: 65px;
+}
+
+.feature-content {
+    flex-grow: 1;
+}
+
+.feature h3 {
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    text-align: start;
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.card .feature {
+    max-width: 500px;
+}
+
+.number-card .feature {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--clr02);
+}
+
+.categories {
+    margin: 0px 300px 0px 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.category {
+    background-color: #e3ede3;
+    width: calc(33.33% - 20px); /* Уменьшаем ширину для учета отступов */
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 16px;
+}
+
+.category h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {

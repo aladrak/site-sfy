@@ -16,9 +16,9 @@
             { text: 'Главная', href: 'index.html' },
             // { text: 'Рестораны и кафе', href: 'index.html' },
             // { text: 'Продуктовые магазины', href: 'index.html' },
-            { text: 'Найти магазины', href: 'search.html' },
+            { text: 'Найти магазины', href: 'search.html' }
             // { text: 'Магазины для хобби', href: 'index.html' },
-            { text: 'Контакты', href: 'index.html' }
+            // { text: 'Контакты', href: 'index.html' }
         ];
         const btnContainer = document.createElement('div');
         btnContainer.className = 'btn-container';

@@ -2,24 +2,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.1); /* subtle background color on hover */
 }
 
-/* .line {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    width: 100%;
-    display: block;
-    height: 100%;
-    height: 2px;
-    background-color: #ddd;
-} */
-
-/* .list {
-    display: grid;
-    gap: 90px;
-    padding-top: 135px;
-    padding-bottom: 135px;
-} */
-
-.title {
+/* .title {
     padding: 40px;
     color: white;
     display: grid;
@@ -34,10 +17,26 @@ button:hover {
     background-position: 50%;
     justify-content: center;
     align-items: center;
+} */
+
+.title {
+    padding: 40px;
+    color: white;
+    display: grid;
+    border-radius: 40px;
+    margin: 40px;
+    opacity: 1;
+    transition: opacity .7s;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 #card-container {
-    margin: 0px 250px 0px 250px;
+    margin: 0px 200px 0px 200px;
     text-align: start;
     display: flex;
     flex-direction: row;
@@ -215,17 +214,89 @@ button:hover {
         padding: 10px; /* Уменьшаем внутренние отступы */
     }
 
-    .slide img {
-        width: 100px; /* Уменьшаем изображения */
-        height: 100px;
-    }
-
     .dots {
         margin-top: 5px; /* Уменьшаем отступ точек */
     }
 
-    .dot {
-        width: 8px; /* Уменьшаем размер точек */
-        height: 8px;
+    .title {
+        margin: 20px;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title h1 {
+        font-size: 1.8em;
+    }
+
+    .title p {
+        font-size: 1em;
+    }
+
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.3em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .slider-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slide h4 {
+        font-size: 18px;
+    }
+
+    .slide img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.4em;
+    }
+
+    .title p {
+        font-size: 0.9em;
+    }
+
+    .card h3 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .slide h4 {
+        font-size: 16px;
+    }
+
+    .slide img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider-btn {
+        font-size: 20px;
+        padding: 8px;
     }
 }

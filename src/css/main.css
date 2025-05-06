@@ -23,8 +23,11 @@
     padding: 10px;
 }
 
-/* Показываем бургер-меню на мобильных устройствах */
-
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+}
 
 body {
     background-color: var(--clr02);
@@ -176,19 +179,16 @@ p {
 } */
 
 @media (max-width: 768px) {
-    .burger-menu {
-        display: block; /* Показываем меню */
-    }
-
     header .nav-container {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        background-color: var(--clr01);
         position: absolute;
         top: 5px;
         left: 0;
         width: 100%;
         z-index: 2;
+        /* transform: translateY(-100%);
+        transition: transform 0.3s ease; */
     }
 
     header .nav-container .btn-container.active {
@@ -197,55 +197,89 @@ p {
 
     header .nav-container .btn-container {
         display: none;
+        /* flex-direction: column; */
         width: 100%;
         text-align: center;
     }
 }
+
 @media (max-width: 768px) {
-    .container {
-        padding-top: 80px; /* Увеличенный отступ для мобильных устройств */
+    h1 {
+        font-size: 1.8em;
     }
-    header {
-        height: auto; /* Высота становится гибкой */
-        flex-direction: row; /* Элементы размещаются в столбик */
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .title p {
+        font-size: 0.9em;
+    }
+
+    .card {
+        max-width: 100%;
         padding: 10px;
     }
 
-    header .logo p {
-        font-size: 1.5em; /* Уменьшаем размер текста логотипа */
+    .feature img {
+        width: 50px;
+        height: 50px;
     }
 
-    header .nav-container {
-        flex-direction: row; /* Кнопки в строку */
-        gap: 5px;
-        flex-wrap: wrap; /* Перенос кнопок на новую строку при необходимости */
+    .categories {
+        flex-direction: column;
+        margin: 20px;
     }
 
-    .btn-container .nav-button {
-        padding: 5px 10px; /* Уменьшаем отступы кнопок */
-    }
-    header h3 {
-        font-size: 1em; 
+    .category {
+        width: 100%;
     }
 
-    header .line {
-        display: none; /* Убираем разделительную линию на мобильных устройствах */
+    .input-group {
+        flex-direction: column;
     }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    /* .btn {
+        width: 100%;
+        font-size: 16px;
+    } */
 }
 
-/* Стили для очень маленьких экранов */
 @media (max-width: 480px) {
-    header .nav-container {
-        flex-direction: row; /* Кнопки в столбик */
-        align-items: center; /* Центрируем кнопки */
+    .title h1 {
+        font-size: 1.2em;
     }
 
-    header .logo {
-        margin-bottom: 10px; /* Добавляем отступ под логотип */
+    .title p {
+        font-size: 0.85em;
     }
 
-    header .nav-button {
-        width: 40%; /* Кнопки занимают всю ширину */
-        text-align: center; /* Текст по центру */
+    .card h3 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .container {
+        padding-top: 120px;
+    }
+
+    .feature img {
+        width: 40px;
+        height: 40px;
     }
 }

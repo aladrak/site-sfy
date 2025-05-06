@@ -36,8 +36,8 @@
         // themeBtn.id = 'theme-toggle';
 
         burgerMenu.onclick = () => btnContainer.classList.toggle('active');
-        navContainer.appendChild(burgerMenu); // Для телефона
         // navContainer.appendChild(sep);
+        navContainer.appendChild(burgerMenu); // Для телефона
         navContainer.appendChild(btnContainer);
         // navContainer.appendChild(themeBtn);
         header.appendChild(navContainer);

@@ -27,7 +27,7 @@
         font-size: 1.8em;
     }
 }
-title p {
+.title p {
     font-size: 22px;
     @media (max-width: 768px) {
         font-size: 1em;

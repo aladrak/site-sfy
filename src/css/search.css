@@ -25,6 +25,7 @@ button:hover {
     display: grid;
     border-radius: 40px;
     margin: 40px;
+    height: 600px;
     opacity: 1;
     transition: opacity .7s;
     background-size: cover;
@@ -33,6 +34,29 @@ button:hover {
     background-position: 50%;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+        height: 400px;
+        margin: 20px;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.title h1 {
+    font-size: 54px; 
+    color:white;
+    @media (max-width: 768px) {
+        font-size: 1.8em;
+    }
+}
+.title p {
+    font-size: 28px; 
+    font-weight: lighter; 
+    line-height: 1.4;
+    @media (max-width: 768px) {
+        font-size: 1em;
+    }
 }
 
 #card-container {
@@ -49,6 +73,9 @@ button:hover {
     @media (max-width: 768px) {
         flex-direction: column; /* Карточки в столбик */
         gap: 15px; /* Увеличиваем зазор */
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -63,10 +90,10 @@ button:hover {
     box-sizing: border-box;
     display: grid;
 
-    /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
         max-width: 100%; /* Занимает всю ширину экрана */
         padding: 15px; /* Уменьшаем отступы */
+        margin-bottom: 20px;
     }
 }
 .card-content {
@@ -79,7 +106,6 @@ button:hover {
     font-weight: bold;
     margin-bottom: 10px;
 
-    /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
         font-size: 1.3em; /* Уменьшаем размер заголовка */
     }
@@ -89,7 +115,6 @@ button:hover {
     margin: 0;
     font-size: 1em;
 
-    /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
         font-size: 0.9em; /* Уменьшаем размер текста */
     }
@@ -100,13 +125,13 @@ button:hover {
     max-width: 560px;
     max-height: 300px;
     object-fit: cover;
-    /* Адаптивность для мобильных устройств */
+
     @media (max-width: 768px) {
         /* height: 100px; Сохраняем пропорции */
     }
 }
 
-/* Слайдер с историями */
+/* Слайдер с Отзывами */
 #story-container {
     background-color: var(--clrt);
     display: grid;
@@ -114,7 +139,22 @@ button:hover {
     align-items: center;
     padding-top: 135px;
     padding-bottom: 135px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
+
+#story-container h3 {
+    font-size: 42px;
+    padding-bottom: 40px;
+    @media (max-width: 768px) {
+        font-size: 1.8em;
+    }
+}
+
 .slider-container {
     position: relative;
     width: 95%;
@@ -126,6 +166,11 @@ button:hover {
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 10px;
+        width: 95%; /* Уменьшаем ширину слайдера */
+    }
 }
 
 .slider {
@@ -134,12 +179,16 @@ button:hover {
 }
 
 .slide {
-    display:grid;
+    display: grid;
     justify-items: center;
     gap: 30px;
     min-width: 100%;
     box-sizing: border-box;
     padding: 20px;
+
+    @media (max-width: 768px) {
+        padding: 10px 30px;
+    }
 }
 
 .slide h2 {
@@ -151,12 +200,21 @@ button:hover {
     max-width: 800px;
     font-size: 26px;
     font-weight: lighter;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .slide img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+
+    @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .slider-btn {
@@ -186,6 +244,9 @@ button:hover {
     text-align: center;
     margin-top: 10px;
     user-select: none;
+    @media (max-width: 768px) {
+        margin-top: 5px;
+    }
 }
 
 .dot {
@@ -203,80 +264,7 @@ button:hover {
     background-color: black;
 }
 
-/* Адаптация слайдера */
-@media (max-width: 768px) {
-    .slider-container {
-        width: 95%; /* Уменьшаем ширину слайдера */
-        padding: 10px;
-    }
-
-    .slide {
-        padding: 10px; /* Уменьшаем внутренние отступы */
-    }
-
-    .dots {
-        margin-top: 5px; /* Уменьшаем отступ точек */
-    }
-
-    .title {
-        margin: 20px;
-        padding: 20px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .title h1 {
-        font-size: 1.8em;
-    }
-
-    .title p {
-        font-size: 1em;
-    }
-
-    #card-container {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .card {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card h3 {
-        font-size: 1.3em;
-    }
-
-    .card p {
-        font-size: 0.9em;
-    }
-
-    .slider-container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .slide h4 {
-        font-size: 18px;
-    }
-
-    .slide img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 @media (max-width: 480px) {
-    .title h1 {
-        font-size: 1.4em;
-    }
-
-    .title p {
-        font-size: 0.9em;
-    }
 
     .card h3 {
         font-size: 1.2em;

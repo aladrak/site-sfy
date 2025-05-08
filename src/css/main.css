@@ -13,22 +13,6 @@
     padding: 0;
 }
 
-/* Бургер-меню */
-.burger-menu {
-    display: none; /* Скрываем по умолчанию */
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-}
-
 body {
     background-color: var(--clr02);
     color: var(--clr01);
@@ -47,8 +31,27 @@ body.dark-mode {
 
 .container {
     margin: 0 auto;
-    /* padding: 20px; */
+    padding: 1px;
     padding-top: 80px;
+    /* @media (max-width: 768px) {
+        padding-top: 120px;
+    } */
+}
+
+/* Бургер-меню */
+.burger-menu {
+    width: 100%;
+    margin: 0px 0px 0px 20px;
+    display: none; /* Скрываем по умолчанию */
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.burger-menu button {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 header {
@@ -75,7 +78,7 @@ header button {
     justify-content: center;
 }
 
-header .logo {
+/* header .logo {
     margin-right: 0px;
     margin-left: 5px;
     align-items: center;
@@ -90,17 +93,10 @@ header .logo p {
 }
 header .logo img {
     border-radius: 50%;
-}
-header .line {
-    margin-left: 25px;
-    margin-right: 15px;
-    width: 2px;
-    /* height: 100%; */
-    height: 35px;
-    background-color: #ddd;
-}
+} */
 
 header .nav-container {
+    background-color: var(--clrt);
     display: flex;
     gap: 10px;
     align-items: center;
@@ -157,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3 {
     text-align: center;
-
     /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
         font-size: 1.5em; /* Уменьшаем размер заголовков */
@@ -166,7 +161,6 @@ h1, h2, h3 {
 
 p {
     line-height: 1.6;
-
     /* Адаптивность для мобильных устройств */
     @media (max-width: 768px) {
         font-size: 0.9em; /* Уменьшаем размер текста */
@@ -201,11 +195,10 @@ p {
         width: 100%;
         text-align: center;
     }
-}
 
-@media (max-width: 768px) {
     h1 {
         font-size: 1.8em;
+        line-height: 1.3;
     }
 
     h3 {
@@ -213,34 +206,12 @@ p {
     }
 
     p {
-        font-size: 0.9em;
-    }
-
-    .title h1 {
-        font-size: 1.5em;
-    }
-
-    .title p {
-        font-size: 0.9em;
-    }
-
-    .card {
-        max-width: 100%;
-        padding: 10px;
+        font-size: 1em;
     }
 
     .feature img {
         width: 50px;
         height: 50px;
-    }
-
-    .categories {
-        flex-direction: column;
-        margin: 20px;
-    }
-
-    .category {
-        width: 100%;
     }
 
     .input-group {
@@ -258,26 +229,6 @@ p {
 }
 
 @media (max-width: 480px) {
-    .title h1 {
-        font-size: 1.2em;
-    }
-
-    .title p {
-        font-size: 0.85em;
-    }
-
-    .card h3 {
-        font-size: 1.1em;
-    }
-
-    .card p {
-        font-size: 0.8em;
-    }
-
-    .container {
-        padding-top: 120px;
-    }
-
     .feature img {
         width: 40px;
         height: 40px;

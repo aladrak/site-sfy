@@ -4,9 +4,11 @@
         const navContainer = document.createElement('div');
         navContainer.className = 'nav-container';
         // Для телефона
-        const burgerMenu = document.createElement('button');
+        const burgerMenu = document.createElement('div');
         burgerMenu.className = 'burger-menu';
-        burgerMenu.innerHTML = '&#9776;'; // Иконка "≡"
+        const burgerBtn = document.createElement('button');
+        burgerBtn.innerHTML = '&#9776;'; // Иконка "≡"
+        burgerMenu.appendChild(burgerBtn);
 
         // const sep = document.createElement('div');
         // sep.className = 'line';

@@ -114,6 +114,7 @@ button:hover {
 .card p {
     margin: 0;
     font-size: 1em;
+    color: black;
 
     @media (max-width: 768px) {
         font-size: 0.9em; /* Уменьшаем размер текста */

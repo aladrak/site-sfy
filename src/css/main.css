@@ -167,10 +167,9 @@ p {
     }
 }
 
-/* a {
-    color: #3498db;
+a {
     text-decoration: none;
-} */
+}
 
 @media (max-width: 768px) {
     header .nav-container {

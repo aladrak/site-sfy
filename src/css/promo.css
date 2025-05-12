@@ -1,0 +1,61 @@
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    max-width: 560px;
+    max-height: 300px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+        /* height: 100px; Сохраняем пропорции */
+    }
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.prev {
+    left: 10px;
+    z-index: 1;
+}
+
+.next {
+    right: 10px;
+    z-index: 1;
+}
+
+.page {
+    max-width: 1000px;
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+.page.active {
+    display: inline-grid;
+    flex-direction: column;
+    justify-items: center;
+}

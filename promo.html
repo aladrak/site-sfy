@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>SFY</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лучшие предложения рядом с вами: найдите местные акции и компании">
+    <meta name="keywords" content=".">
+    <link rel="icon" type="image/svg" href="src/img/logo.svg">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <link rel="stylesheet" type="text/css" href="src/css/promo.css">
+    <script src="src/js/main.js" defer></script>
+    <script src="src/js/promo.js" defer></script>
+</head>
+
+<body>
+<div id="container">
+    <button class="prev unselect" onclick="prevPage()" type="button">&#10094;</button>
+    <div id="content"></div>
+    <button class="next unselect" onclick="nextPage()" type="button">&#10095;</button>
+</div>
+
+<template id="tpl-1">
+    <div class="page active">
+        <img src="src/img/shop1.webp" draggable="false">
+        <h1>Солнечный день</h1>
+        <p>Большая сеть ресторанов  во всем городе. Широкий выбор салатов, супов, гарниров, вторых блюд и десертов. Меню обновляется каждый день. Быстрое обслуживание по небольшой цене.</p>
+    </div>
+</template>
+
+<template id="tpl-2">
+    <div class="page active">
+        <img src="src/img/shop2.webp" draggable="false">
+        <h1>Вилка ложка</h1>
+        <p>Большой ассортимент завтраков, обедов, ужинов. Все из натуральных фермерских продуктов, очень вкусно! Цены приемлемые, быстрое обслуживание. Уютное место для туристов и местных жителей.</p>
+    </div>
+</template>
+
+<template id="tpl-3">
+    <div class="page active">
+        <img src="src/img/shop3.webp" draggable="false">
+        <h1>Jungle chef</h1>
+        <p>Новосибирская точка уникальной по рецептуре шаурмы. Профессионализм сотрудников, разнообразие вкусов, а также скидки студентам .</p>
+    </div>
+</template>
+
+<template id="tpl-4">
+    <div class="page active">
+        <img src="src/img/shop4.webp" draggable="false">
+        <h1>Леонардо</h1>
+        <p>Все возможности для рукоделия. Краски, нитки, всё для вязания и поделок, всевозможная фурнитура для одежды, невысокие цены.</p>
+    </div>
+</template>
+</body>
+</html>
